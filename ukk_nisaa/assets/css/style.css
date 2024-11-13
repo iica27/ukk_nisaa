@@ -1,0 +1,346 @@
+/* style.css */
+
+/* Import font modern */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Terapkan font ke seluruh halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe0f7; /* Latar belakang pink lembut */
+    color: #660033; /* Warna teks pink gelap */
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Ukuran font dasar */
+    line-height: 1.6; /* Tinggi garis untuk kenyamanan membaca */
+}
+
+/* Gaya Navbar */
+.navbar {
+    background-color: #cc004d; /* Warna pink tua */
+    padding: 1rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih tajam */
+    transition: background-color 0.4s ease, transform 0.4s ease; /* Transisi halus untuk perubahan warna dan transformasi */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: auto; /* Memindahkan navbar link ke kanan */
+}
+
+.navbar:hover {
+    background-color: #e60066; /* Warna pink lebih cerah saat hover */
+    transform: translateY(-2px); /* Efek mengangkat navbar saat hover */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Warna teks putih */
+    padding: 0.5rem 1rem;
+    transition: color 0.4s ease, background-color 0.4s ease; /* Transisi lebih halus */
+    border-radius: 5px; /* Sudut melengkung untuk link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffe6f2; /* Warna pink muda saat hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang putih transparan saat hover */
+}
+
+/* Gaya tombol */
+.btn {
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem; /* Menyesuaikan padding tombol */
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem; /* Ukuran font tombol */
+    transition: background-color 0.4s ease, transform 0.3s ease; /* Transisi untuk latar belakang dan transformasi */
+}
+
+.btn-primary {
+    background-color: #e60066; /* Pink gelap untuk tombol */
+}
+
+.btn-primary:hover {
+    background-color: #cc0055; /* Pink lebih gelap saat hover */
+    transform: scale(1.05); /* Efek sedikit membesar tombol saat hover */
+}
+
+.btn-danger {
+    background-color: #cc004d; /* Pink tua untuk tombol hapus */
+}
+
+.btn-danger:hover {
+    background-color: #b30045; /* Pink yang lebih gelap saat hover */
+    transform: scale(1.05); /* Efek sedikit membesar tombol saat hover */
+}
+
+.btn-warning {
+    background-color: #ff99cc; /* Pink lembut untuk tombol edit */
+    color: #212529; /* Warna teks gelap untuk kontras */
+}
+
+.btn-warning:hover {
+    background-color: #ff80bf; /* Pink yang lebih gelap saat hover */
+    transform: scale(1.05); /* Efek sedikit membesar tombol saat hover */
+}
+
+/* Gaya kartu modern */
+.card {
+    border: none;
+    border-radius: 12px; /* Sudut lebih tajam */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih halus */
+    background-color: #ffffff; /* Latar belakang putih untuk kartu */
+    margin-bottom: 1.5rem; /* Jarak bawah kartu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus untuk kartu */
+    overflow: hidden; /* Untuk mencegah konten melampaui batas sudut */
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02); /* Efek mengangkat dan sedikit memperbesar kartu saat hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 12px; /* Sesuaikan dengan sudut kartu */
+    border-top-right-radius: 12px; /* Sesuaikan dengan sudut kartu */
+    transition: transform 0.5s ease; /* Transisi untuk gambar */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05); /* Efek zoom pada gambar saat hover */
+}
+
+.card-body {
+    padding: 1.5rem; /* Menambahkan padding yang lebih luas untuk konten */
+}
+
+.card-title {
+    color: #660033; /* Warna pink tua untuk judul */
+    font-weight: 700; /* Mengubah menjadi lebih tebal */
+    margin-bottom: 0.5rem; /* Jarak bawah judul */
+}
+
+.card-text {
+    color: #ff3385; /* Warna pink lebih terang untuk teks */
+    font-weight: 400; /* Ubah menjadi lebih tebal untuk teks */
+    margin-bottom: 1rem; /* Jarak bawah untuk teks */
+}
+
+/* Gaya untuk elemen tombol dalam kartu */
+.card .btn {
+    margin-top: 1rem; /* Menambahkan margin untuk tombol */
+    border-radius: 5px; /* Sudut tombol */
+}
+
+/* Gaya untuk tombol like */
+.like-section {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem; /* Jarak atas untuk pemisahan */
+}
+
+.btn-like {
+    background-color: transparent; /* Latar belakang transparan untuk tombol like */
+    border: none; /* Menghilangkan border */
+    color: #e60066; /* Warna pink gelap untuk ikon */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+    font-size: 1.25rem; /* Ukuran font untuk ikon */
+    transition: color 0.3s ease; /* Transisi halus untuk perubahan warna */
+}
+
+.btn-like:hover {
+    color: #cc0055; /* Warna saat hover */
+}
+
+.like-count {
+    margin-left: 0.5rem; /* Jarak antara ikon dan jumlah like */
+    font-weight: 500; /* Membuat angka lebih tebal */
+    color: #660033; /* Warna pink tua untuk jumlah like */
+}
+
+/* Gaya judul */
+h1, h2, h3, h4, h5, h6 {
+    color: #660033; /* Warna pink tua */
+    font-weight: 600; /* Mengubah menjadi lebih tebal */
+    margin-bottom: 0.5rem; /* Jarak bawah judul */
+}
+
+/* Gaya paragraf */
+p {
+    color: #660033; /* Warna pink tua untuk teks */
+    font-weight: 300;
+}
+
+/* Jarak antar elemen */
+.content, .container {
+    padding-top: 20px;
+}
+
+/* Gaya untuk container elemen dengan margin */
+.d-flex {
+    display: flex;
+    justify-content: space-between; /* Menyusun tombol Edit dan Hapus */
+}
+
+/* Gaya untuk tombol Edit dan Hapus */
+.text-white {
+    color: white !important; /* Menggunakan !important jika perlu untuk mengatasi gaya lain */
+}
+
+.modal-content {
+    border-radius: 1rem; /* Membuat sudut lebih bulat */
+    transition: transform 0.3s ease; /* Transisi halus untuk konten modal */
+}
+
+/* Media Query untuk tampilan responsif */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Mengurangi ukuran font untuk layar kecil */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Mengurangi ukuran font tombol */
+        padding: 0.5rem 1rem; /* Menyesuaikan padding tombol */
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Menyesuaikan ukuran judul kartu */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Menyesuaikan ukuran teks kartu */
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 0.4rem 0.8rem; /* Ukuran tombol lebih kecil untuk layar sangat kecil */
+    }
+}
+
+/* Mengurangi ukuran font untuk judul dan teks di halaman album */
+.card-title {
+    font-size: 1.25rem; /* Ukuran font lebih kecil untuk judul */
+}
+
+/* Ukuran font lebih kecil untuk paragraf, input, dan sel tabel */
+p, .form-control, .table td {
+    font-size: 0.875rem; /* Ukuran font lebih kecil */
+}
+
+/* Gaya tombol lebih kecil */
+.btn-sm {
+    font-size: 0.8rem; /* Ukuran font lebih kecil */
+    padding: 0.4rem 0.8rem; /* Mengurangi padding tombol */
+}
+
+/* Gaya untuk halaman login */
+body {
+    background-color: #ffe0f7; /* Latar belakang pink lembut */
+}
+
+/* Gaya untuk card login */
+.card {
+    border-radius: 10px; /* Sudut lebih melengkung */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+
+/* Gaya untuk judul card */
+.card-title {
+    color: #cc004d; /* Warna pink tua */
+    font-weight: 600;
+}
+
+/* Gaya untuk teks info */
+.text-secondary {
+    color: #b30045; /* Warna teks sekunder */
+}
+
+/* Gaya untuk tombol */
+.btn-primary {
+    background-color: #e60066; /* Pink gelap untuk tombol */
+    border: none; /* Menghilangkan border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi halus */
+}
+
+.btn-primary:hover {
+    background-color: #cc0055; /* Pink lebih cerah saat hover */
+    transform: translateY(-2px); /* Efek sedikit mengangkat tombol saat hover */
+}
+
+.btn-outline-primary {
+    color: #e60066; /* Warna teks tombol outline */
+    border-color: #e60066; /* Border warna pink gelap */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+.btn-outline-primary:hover {
+    background-color: #e60066; /* Latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+/* Gaya untuk halaman daftar */
+body {
+    background-color: #ffe0f7; /* Latar belakang pink lembut */
+}
+
+/* Gaya untuk card daftar */
+.card {
+    border-radius: 10px; /* Sudut lebih melengkung */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Gaya untuk judul card */
+.card-title {
+    color: #cc004d; /* Warna pink tua */
+    font-weight: 600;
+}
+
+/* Gaya untuk teks info */
+.text-secondary {
+    color: #b30045; /* Warna teks sekunder */
+}
+
+/* Gaya untuk tombol */
+.btn-primary {
+    background-color: #e60066; /* Pink gelap untuk tombol */
+    border: none; /* Menghilangkan border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi halus */
+}
+
+.btn-primary:hover {
+    background-color: #cc0055; /* Pink lebih cerah saat hover */
+    transform: translateY(-2px); /* Efek sedikit mengangkat tombol saat hover */
+}
+
+.btn-outline-primary {
+    color: #e60066; /* Warna teks tombol outline */
+    border-color: #e60066; /* Border warna pink gelap */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+.btn-outline-primary:hover {
+    background-color: #e60066; /* Latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+/* Gaya untuk input */
+.form-control {
+    border: 1px solid #e60066; /* Border pink gelap untuk input */
+    border-radius: 5px; /* Sudut lebih melengkung */
+}
+
+.form-control:focus {
+    border-color: #cc0055; /* Border pink lebih cerah saat fokus */
+    box-shadow: 0 0 5px rgba(204, 0, 85, 0.5); /* Efek bayangan saat fokus */
+}
+/* Gaya untuk gambar di dalam kartu */
+.card img {
+    width: 100%; /* Membuat gambar memenuhi lebar kartu */
+    height: auto; /* Mengatur tinggi otomatis untuk menjaga rasio aspek */
+    border-top-left-radius: 10px; /* Sesuaikan dengan sudut kartu */
+    border-top-right-radius: 10px; /* Sesuaikan dengan sudut kartu */
+}
